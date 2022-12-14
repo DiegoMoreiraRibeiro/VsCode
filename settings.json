@@ -2,9 +2,30 @@
   "yaml.schemas": {
     "file:///c%3A/Users/dimor/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!c",
+    "!cpp",
+    "!csharp",
+    "!go",
+    "!handlebars",
+    "!haskell",
+    "!jade",
+    "!java",
+    "!latex",
+    "!php",
+    "!pug",
+    "!python",
+    "!restructuredtext",
+    "!rust",
+    "!scala",
+    "!scss"
+  ],
   "redhat.telemetry.enabled": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // Material Theme
   "material-icon-theme.activeIconPack": "nest",
   "material-icon-theme.folders.associations": {
@@ -53,7 +74,6 @@
     "**/__pycache__": true
   },
   "explorer.confirmDelete": false,
-  "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
@@ -76,5 +96,15 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.hover.delay": 1000,
+  "workbench.hover.delay": 1000
 }
